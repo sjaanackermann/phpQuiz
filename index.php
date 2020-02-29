@@ -12,7 +12,7 @@
     
     <form action="questions.php" method="post">
     Please enter your Name: <input type="text" name="name" required><br>
-    Please select your House: <input type="" name="" required><br>
+    Please select your House: <input type="" name="" required><br> <!--ADD IN HOUSE CREST IMAGES TO SELECT-->
     <input type="submit" class="submitbtn">
  </div>
 </body>
