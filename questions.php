@@ -4,12 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Harry Potter Quiz</title>
+
+    <link rel="stylesheet" href="styles/style.css" type="text/css" media="all">
+
+
 </head>
-<body>
+<body class="questionpg">
 <a href="index.php">Back to Home Page</a>
 <br>
 <br>
- <h1>Welcome to <?php echo $_POST["house"]; $_POST["name"]; ?> , Please complete the next 20 questions to get your results:</h1> 
+ <h1>Welcome to <?php echo $_POST["house"];?>  <?php echo $_POST["name"]; ?> , Please complete the next 20 questions to get your results:</h1> 
  <br>
  <br>
 

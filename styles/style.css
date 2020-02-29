@@ -5,14 +5,24 @@
 
 /*home page styling*/
 
+.homepg {
+    background-image: url(../images/welcomePage-bg.jpg);
+    background-color: aqua;
 
+}
 
 
 
 /*question page styling*/
+.questionpg {
+    background-image: url(../images/questions-bg.jpg);
+}
 
 
 
 
 
 /*result page styling*/
+.resultspg {
+    background-image: url(../images/resultsPage-bg.jpg);
+}
