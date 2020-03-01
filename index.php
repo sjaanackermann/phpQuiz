@@ -10,7 +10,7 @@
 
 </head>
 <body class="homepg">
- <div class="">
+ <div class="hpg-content">
     <h1>Welcome to the Ultimate Harry Potter Quiz!</h1>
     <h3>Prove that you are the BIGGEST FAN by testing your knowledge.</h3>
     

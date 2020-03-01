@@ -29,7 +29,7 @@
             "B" => "Ron Weasley", 
             "C" => "Harry Potter", 
             "D" => "Albus Dumbledore"),  
-        
+        /*
         "What is the name of Ron Weasleys Rat?"=>array(
             "A" => "Scabbers", 
             "B" => "Hedgwig", 
@@ -137,7 +137,7 @@
             "B" => "Blowing his Aunt Marge up like a balloon", 
             "C" => "Dropping a bag of chocolate frogs, that gets eaten by Dudley", 
             "D" => "Giving Dudley a pig tail, after Dudley ate his Birthday cake"), 
-
+*/
         "And lastly, how many books are in the series, and how many movies were made from the books?"=>array(
             "A" => "7 Books & 8 Movies", 
             "B" => "6 Books & 7 Movies", 

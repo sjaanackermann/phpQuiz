@@ -7,15 +7,23 @@
 
 .homepg {
     background-image: url(../images/welcomePage-bg.jpg);
-    background-color: aqua;
-
+    background-color: lightgoldenrodyellow;
+    background-size: cover;
 }
 
+.hpg-content {
+    text-align: center;
+    background-color: white;
+    vertical-align: middle;
+   
+}
 
 
 /*question page styling*/
 .questionpg {
     background-image: url(../images/questions-bg.jpg);
+    background-color: rgb(171, 118, 182);
+    background-size: cover;
 }
 
 
@@ -25,4 +33,6 @@
 /*result page styling*/
 .resultspg {
     background-image: url(../images/resultsPage-bg.jpg);
+    background-color: lightskyblue;
+    background-size: cover;
 }
