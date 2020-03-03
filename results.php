@@ -12,6 +12,31 @@
 <body class= "resultspg">
 
 <a href="index.php">Home Page</a>
+
     
+<div class="">
+ 
+		<h1>Results<h1>
+		
+        <?php
+
+        /*print_r($_POST);*/
+
+
+
+        $totalCorrect = 0;
+
+        foreach($_POST as $index){
+            if($index=="C"){
+                $totalCorrect++;
+            }
+        }
+      
+       
+        echo "$totalCorrect / 20 correct";
+        
+    ?>
+	
+	</div>
 </body>
 </html>

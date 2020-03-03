@@ -1,14 +1,17 @@
 /*general styling*/
+.heading {
+    background-color: lightgrey;
 
+}
 
 
 
 /*home page styling*/
 
 .homepg {
-    background-image: url(../images/welcomePage-bg.jpg);
+    background-image: url(../images/welcomePageBg.jpg);
     background-color: lightgoldenrodyellow;
-    background-size: cover;
+    background-size: repeat;
 }
 
 .hpg-content {
@@ -21,9 +24,9 @@
 
 /*question page styling*/
 .questionpg {
-    background-image: url(../images/questions-bg.jpg);
+    background-image: url(../images/questionsBg.jpg);
     background-color: rgb(171, 118, 182);
-    background-size: cover;
+    background-size: repeat;
 }
 
 
@@ -32,7 +35,7 @@
 
 /*result page styling*/
 .resultspg {
-    background-image: url(../images/resultsPage-bg.jpg);
+    background-image: url(../images/resultsPageBg.jpg);
     background-color: lightskyblue;
-    background-size: cover;
+    background-size: repeat;
 }
