@@ -1,16 +1,18 @@
 /*general styling*/
 .heading {
-    background-color: lightgrey;
-    font-family: 'Crimson Text', serif;
+    color: cornsilk;
+    font-family: 'Trade Winds', cursive;
     font-size: 72px;
 
 }
 
 .h1 {
-    font-family: 'Crimson Text', serif;
+    color: cornsilk;
+    font-family: 'Trade Winds', cursive;
 }
 
 .h2, h3, h4, h5, h6 {
+    color: cornsilk;
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -41,18 +43,6 @@ text-shadow:none;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 /*home page styling*/
 
 .homepg {
@@ -63,9 +53,24 @@ text-shadow:none;
 
 .hpg-content {
     text-align: center;
-    background-color: white;
+    background-color: grey;
     vertical-align: middle;
    
+}
+
+.hpg-center {
+    text-align: center;
+}
+
+.blinking{
+    animation:blinkingText 1.5s infinite;
+}
+@keyframes blinkingText{
+    0%{     color: lightblue;    }
+    49%{    color: lightblue; }
+    60%{    color: transparent; }
+    89%{    color:transparent;  }
+    100%{   color: lightblue; }
 }
 
 

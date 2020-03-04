@@ -13,21 +13,25 @@
 
 <!-- Google Fonts -->
 
-<link href="https://fonts.googleapis.com/css?family=Crimson+Text:700|Open+Sans&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Trade+Winds|Open+Sans&display=swap" rel="stylesheet">
     
 <title>Harry Potter Quiz</title>
 
 
 </head>
 <body class="homepg">
- <div class="hpg-content">
-    <h1 class="heading">Welcome to the Ultimate Harry Potter Quiz!</h1>
-    <h2>Prove that you are the BIGGEST FAN by testing your knowledge.</h2>
-    
+
+<div class="jumbotron hpg-content">
+  <h1 class="display-4 heading">Welcome to the Ultimate Harry Potter Quiz!</h1>
+  <hr class="my-4">
+  <p><h2>Prove that you are the <span class="blinking">BIGGEST FAN</span> by testing your knowledge.</h2></p>
+</div>
+
+<div class="hpg-center">
     <form action="questions.php" method="post">
-    <h3>Please enter your Name:</h3> <input type="text" name="name" required><br>
-    
-    
+    <h3>Please enter your Name:</h3> <input type="text" name="name" required>
+    <br>
+    <br>
     
     <h3>Please select your House:</h3> <br>
    <div class="">
@@ -76,14 +80,9 @@
 </div>
 <br>
 
-    <!--ADD IN HOUSE CREST IMAGES TO SELECT
-    <input type="radio" name="house" value="Gryffindor" required>Gryffindor<br>
-    <input type="radio" name="house" value="Hufflepuff" required>Hufflepuff<br>
-    <input type="radio" name="house" value="Ravenclaw" required>Ravenclaw<br>
-    <input type="radio" name="house" value="Slytherin" required>Slytherin<br>
-     -->
     <input type="submit" class="submitbtn">
  </div>
+</div>
 
 
 
