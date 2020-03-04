@@ -21,48 +21,9 @@
 </head>
 <body class= "resultspg">
 
-<a href="index.php">Home Page</a>
-
-
-<?php 
-/*
-
-$correctAnswers = array(
-    "Harry Potter",
-    "Scabbers",
-    "Albus Percival Wulfric Brian Dumbledore",
-    "Eagle",
-    "I’m going to have a lot of fun with Dudley this summer…",
-    "Tom Marvolo Riddle",
-    "17",
-    "A Squib",
-    "150",
-    "Barty Crouch Jr",
-    "Muggle",
-    "Bill, Charlie, Percy, Fred, George, Ron, Ginny",
-    "Avada Kedavra, Crucio and Imperio",
-    "McGonagall",
-    "The Prisoner of Azkaban",
-    "Bellatrix Lestrange",
-    "11 million",
-    "Orlando, Florida",
-    "Blowing his Aunt Marge up like a balloon",
-    "7 Books & 8 Movies");
-
-
-    $totalCorrect = 0;
-
-    foreach($correctAnswer as $correct =>$value){
-    $}
-        foreach($_POST[$index] as $answer){
-        }
-                $totalCorrect++;
-            
-        
-  */  
-?>
-
-
+<nav class="navbar navbar-dark bg-dark">
+  <a class="navbar-brand" href="index.php">Back to Home Page</a>
+</nav>
     
 <div class="">
  
@@ -83,13 +44,13 @@ $correctAnswers = array(
       
 
         switch($totalCorrect){
-            case $totalCorrect <10: echo "Your Total:$totalCorrect <br> That's not good";
+            case $totalCorrect <10: echo "Your Total:$totalCorrect/20 <br> That's not good";
         break;
-            case $totalCorrect <=15: echo "Your Total:$totalCorrect <br> You're getting there";
+            case $totalCorrect <=15: echo "Your Total:$totalCorrect/20 <br> You're getting there";
         break;
-            case $totalCorrect <=19: echo "Your Total:$totalCorrect <br> You are almost the best";
+            case $totalCorrect <=19: echo "Your Total:$totalCorrect/20 <br> You are almost the best";
         break;
-            case $totalCorrect =20: echo "Your Total:$totalCorrect <br> Congratulations! You are the BIGGEST fan!";
+            case $totalCorrect =20: echo "Your Total:$totalCorrect/20 <br> Congratulations! You are the BIGGEST fan!";
         break;
             default: echo "Please try again.";
         }

@@ -19,7 +19,9 @@
 
 </head>
 <body class="questionpg">
-<a href="index.php" class="">Back to Home Page</a>
+<nav class="navbar navbar-dark bg-dark">
+  <a class="navbar-brand" href="index.php">Back to Home Page</a>
+</nav>
 <br>
 <br>
  <h1 class="heading">Welcome to <?php echo $_POST["crest"];?>  <?php echo $_POST["name"]; ?>, Please complete the next 20 questions to get your results:</h1> 

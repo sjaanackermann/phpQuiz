@@ -15,7 +15,7 @@
 }
 
 .submitbtn {
-background: #B9DFFF;
+background: #016ABC;
 color: #fff;
 border: 1px solid #eee;
 border-radius: 20px;
@@ -25,7 +25,7 @@ text-shadow:none;
 
 .submitbtn:hover {
 
-background: #016ABC;
+background: rgb(92, 141, 180);
 color: #fff;
 border: 1px solid #eee;
 border-radius: 20px;
@@ -67,23 +67,12 @@ text-shadow:none;
     vertical-align: middle;
    
 }
-/*
-.container {
-    width: 100px;
-    height: 100px;
-}
 
- resize images 
-.crests {
-    width: 50px;
-    height: auto;
-}
-*/
 
 /*question page styling*/
 .questionpg {
     background-image: url(../images/questionsBg.jpg);
-    background-color: rgb(171, 118, 182);
+    background-color: lightgray;
     background-size: repeat;
 }
 
