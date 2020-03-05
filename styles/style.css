@@ -3,6 +3,7 @@
     color: cornsilk;
     font-family: 'Trade Winds', cursive;
     font-size: 72px;
+    height: auto;
 
 }
 
@@ -12,9 +13,11 @@
 }
 
 .h2, h3, h4, h5, h6 {
-    color: cornsilk;
+    color: lightskyblue;
     font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
 }
+
 
 .submitbtn {
 background: #016ABC;
@@ -22,6 +25,8 @@ color: #fff;
 border: 1px solid #eee;
 border-radius: 20px;
 text-shadow:none;
+width: 420px;  
+height: 50px;
 
 }
 
@@ -35,6 +40,30 @@ text-shadow:none;
 
 }
 
+.button {
+    text-align: center;
+}
+
+.navbar-brand:hover {
+    background-color: grey;
+    border: none;
+    color: lightgoldenrodyellow;
+    padding: 16px 8px;
+    font-size: 24px;
+    margin: 4px 2px;
+    opacity: 0.6;
+    transition: 0.3s;
+  }
+
+
+
+.hpg-content {
+    text-align: center;
+    background-color: grey;
+    vertical-align: middle;
+    height: auto;
+   
+}
 
 @media screen and (max-width:959px){
 
@@ -51,16 +80,29 @@ text-shadow:none;
     background-size: repeat;
 }
 
-.hpg-content {
-    text-align: center;
-    background-color: grey;
-    vertical-align: middle;
-   
-}
 
 .hpg-center {
+
     text-align: center;
+    background-position: center;
+    
 }
+
+.wp-input {
+    background-color: grey;
+    vertical-align:middle;
+    margin-left:auto;
+    margin-right:auto;
+    text-align:center;
+    width: 600px;
+    font-weight: bolder;
+    font-size: 24px;
+    color: rgb(103, 197, 235);
+    border: 1px solid grey;
+    border-radius: 15px;
+}
+
+
 
 .blinking{
     animation:blinkingText 1.5s infinite;
@@ -74,6 +116,18 @@ text-shadow:none;
 }
 
 
+.crests {
+    background-color: grey;
+    vertical-align:middle;
+    margin-left:auto;
+    margin-right:auto;
+    text-align:center;
+    width: 250px;
+    height: auto;
+    border: 1px solid grey;
+    border-radius: 15px;
+}
+
 /*question page styling*/
 .questionpg {
     background-image: url(../images/questionsBg.jpg);
@@ -81,8 +135,45 @@ text-shadow:none;
     background-size: repeat;
 }
 
+.Questions {
+    background-color:grey ;
+    font-family: 'Trade Winds', cursive;
+    color: lightgoldenrodyellow;
+    text-align: center;
+    font-size: 36px;
+    width: 420px;
+    height: auto;
+    border: 1px solid grey;
+    border-radius: 15px;
+    
+
+}
+
+.Options {
+    text-align: center;
+    background-color: grey;
+    font-size: 24px;
+    width: 420px;
+    height: auto;
+    border: 1px solid lightgoldenrodyellow;
+    border-radius: 15px;
+}
 
 
+.container {
+    height: auto;
+    width: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: center;
+    
+}
+
+
+form input[type="radio"] {
+    margin-right: 10px;
+}
 
 
 /*result page styling*/

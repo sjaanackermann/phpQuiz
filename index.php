@@ -28,62 +28,72 @@
 </div>
 
 <div class="hpg-center">
+<div class="wp-input">
     <form action="questions.php" method="post">
+        <br>
     <h3>Please enter your Name:</h3> <input type="text" name="name" required>
     <br>
     <br>
-    
-    <h3>Please select your House:</h3> <br>
-   <div class="">
-    <input 
-  type="radio" name="crest" value="Gryffindor"
-  id="Gryffindor" class="input-hidden" required/>
-<label for="Gryffindor">
-  <img class=""
-    src="" 
-    alt="Gryffindor Crest" />
-</label>
     </div>
-
-    <div class="">
-<input 
+    <br>
+    <div class="wp-input">   
+        <br>
+    <h3>Please select your House:</h3> 
+    <br>
+</div>
+<br>
+<br>
+   <div class="crests">
+    <input 
+        type="radio" name="crest" value="Gryffindor"
+        id="Gryffindor" class="input-hidden" required/>
+    <label for="Gryffindor">
+        <img class=""
+        src="images/gryffindor.png" 
+        alt="Gryffindor Crest" />
+    </label>
+    </div>
+    <br>
+    <div class="crests">
+    <input 
   type="radio" name="crest" value="Ravenclaw"
   id="Ravenclaw" class="input-hidden" required/>
 <label for="Ravenclaw">
   <img 
-    src="" 
+    src="images/ravenclaw.png" 
     alt="Ravenclaw Crest" />
 </label>
 </div>
+<br>
 
-
-<div class="">
+<div class="crests">
 <input 
   type="radio" name="crest" value="Hufflepuff"
   id="Hufflepuff" class="input-hidden" required/>
 <label for="Hufflepuff">
   <img 
-    src="" 
+    src="images/hufflepuff.png" 
     alt="Hufflepuff Crest" />
 </label>
 </div>
-
-<div class="">
+<br>
+<div class="crests">
 <input 
   type="radio" name="crest" value="Slytherin"
   id="Slytherin" class="input-hidden" required/>
 <label for="Slytherin">
   <img 
-    src="" 
+    src="images/slytherin.png" 
     alt="Slytherin Crest" />
 </label>
 </div>
 <br>
-
+<br>
     <input type="submit" class="submitbtn">
  </div>
 </div>
-
+<br>
+<br>
 
 
 

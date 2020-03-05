@@ -13,7 +13,7 @@
     
 <!-- Google Fonts -->
 
-<link href="https://fonts.googleapis.com/css?family=Crimson+Text:700|Open+Sans&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Trade+Winds|Open+Sans&display=swap" rel="stylesheet">
 
 <title>Your Results</title>
 
@@ -25,10 +25,11 @@
   <a class="navbar-brand" href="index.php">Back to Home Page</a>
 </nav>
     
-<div class="">
+<div class="heading hpg-content">
  
-		<h1>Here are your results <?php echo $_POST["name"]; ?>:<h1>
-		
+		<h1>Your results <?php echo $_POST["name"]; ?>:<h1>
+        </div>	
+        <div class="">
         <?php
 
         /*print_r($_POST);*/
@@ -58,8 +59,8 @@
         
         
     ?>
-	
-    </div>
+	</div>
+    
     
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
