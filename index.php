@@ -22,6 +22,7 @@
 <body class="homepg">
 
 <div class="jumbotron hpg-content">
+    <img class="img" src="images/hogwarts.png" alt="hogwarts crest">
   <h1 class="display-4 heading">Welcome to the Ultimate Harry Potter Quiz!</h1>
   <hr class="my-4">
   <p><h2>Prove that you are the <span class="blinking">BIGGEST FAN</span> by testing your knowledge.</h2></p>
@@ -31,14 +32,14 @@
 <div class="wp-input">
     <form action="questions.php" method="post">
         <br>
-    <h3>Please enter your Name:</h3> <input type="text" name="name" required>
+    <h3><u>Please enter your Name:</u></h3> <input type="text" name="name" required>
     <br>
     <br>
     </div>
     <br>
     <div class="wp-input">   
         <br>
-    <h3>Please select your House:</h3> 
+    <h3><u>Please select your House:</u></h3> 
     <br>
 </div>
 <br>

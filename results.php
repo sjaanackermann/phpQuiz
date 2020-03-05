@@ -26,8 +26,10 @@
 </nav>
     
 <div class="heading hpg-content">
- 
+        
+        <br>
 		<h1>Your results <?php echo $_POST["name"]; ?>:<h1>
+        <br>
         </div>	
         <div class="">
         <?php

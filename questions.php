@@ -41,7 +41,7 @@
             "A" => "Hedgwig", 
             "B" => "Crookshanks", 
             "D" => "Neville"), 
-        /*
+        
         "What is Dumbledore’s full name?"=>array(
             "B" => "Albus Wulfric Percival Brian Dumbledore", 
             "C" => "Albus Percival Wulfric Brian Dumbledore", 
@@ -149,7 +149,7 @@
             "B" => "6 Books & 7 Movies", 
             "D" => "7 Books & 7 Movies", 
             "A" => "6 Books & 8 Movies"), 
-        */
+        
         );
         ?>
         
@@ -162,7 +162,7 @@
                     echo "<br><br><h2 class='Questions'>$question</h2>";
             
                 foreach($answers as $index => $answer) {
-                    echo "<br><div class=\"Options\"><input type=\"radio\" name=\"$question\" value=\"$index\" required>".$answer."<br></div>" ;
+                    echo "<div class=\"Options\"><input type=\"radio\" name=\"$question\" value=\"$index\" required>".$answer."<br></div>" ;
                     }
 
                 }
