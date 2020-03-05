@@ -162,7 +162,7 @@
                     echo "<br><br><h2 class='Questions'>$question</h2>";
             
                 foreach($answers as $index => $answer) {
-                    echo "<div class=\"Options\"><input type=\"radio\" name=\"$question\" value=\"$index\" required>".$answer."<br></div>" ;
+                    echo "<br><div class=\"Options\"><input type=\"radio\" name=\"$question\" value=\"$index\" required>".$answer."<br></div>" ;
                     }
 
                 }

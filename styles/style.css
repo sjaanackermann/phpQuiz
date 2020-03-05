@@ -21,8 +21,8 @@
 
 .submitbtn {
 background: #016ABC;
-color: #fff;
-border: 1px solid #eee;
+color: lightgoldenrodyellow;
+border: 1px solid lightgoldenrodyellow;
 border-radius: 20px;
 text-shadow:none;
 width: 420px;  
@@ -33,8 +33,8 @@ height: 50px;
 .submitbtn:hover {
 
 background: rgb(92, 141, 180);
-color: #fff;
-border: 1px solid #eee;
+color: lightgoldenrodyellow;
+border: 1px solid lightgoldenrodyellow;
 border-radius: 20px;
 text-shadow:none;
 
@@ -143,7 +143,7 @@ text-shadow:none;
     font-size: 36px;
     width: 420px;
     height: auto;
-    border: 1px solid grey;
+    border: 2px solid rgb(70, 69, 69);
     border-radius: 15px;
     
 
