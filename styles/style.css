@@ -124,6 +124,15 @@ text-shadow:none;
     100%{   color: lightblue; }
 }
 
+.blinking-2{
+    animation:blinkingText 1.5s infinite;
+}
+@keyframes blinkingText{
+    0%{     color: rgb(221, 155, 11);}
+    50%{    color: transparent; }
+    100%{   color: rgb(221, 155, 11); }
+}
+
 
 .crests {
     background-color: grey;
@@ -201,4 +210,46 @@ form input[type="radio"] {
     background-image: url(../images/resultsPageBg.jpg);
     background-color: lightskyblue;
     background-size: repeat;
+}
+
+.resultContent {
+    text-align: center;
+}
+
+.textStyle {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 48px;
+    color: rgb(66, 63, 63);
+    background-color: lightgrey;
+    padding: 15px calc(50% - 300px);
+    border: 3px solid grey;
+    border-radius: 15px;
+
+}
+
+
+/* Image styling & animation result page */
+
+.result1 {
+
+
+}
+
+
+.result2 {
+
+
+
+}
+
+
+.result3 {
+
+
+}
+
+
+.result4 {
+
 }
