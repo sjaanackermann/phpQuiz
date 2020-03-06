@@ -28,7 +28,7 @@
 <div class="heading hpg-content">
         
         <br>
-		<h1>Your results <?php echo $_POST["name"]; ?>:<h1>
+		<h1>Your results :<h1>
         <br>
         </div>	
         <div class="">
@@ -47,15 +47,23 @@
       
 
         switch($totalCorrect){
-            case $totalCorrect <10: echo "Your Total:$totalCorrect/20 <br> That's not good";
+            case $totalCorrect <10: echo "Your Total:$totalCorrect/20 <br><p> Have you even read Harry Potter? </p>";
+                $result1 = "result1.png";
+                echo "<br><img src=\" images/$result1 \" class=\"result1\">";
         break;
-            case $totalCorrect <=15: echo "Your Total:$totalCorrect/20 <br> You're getting there";
+            case $totalCorrect <=15: echo "Your Total:$totalCorrect/20 <br><p> You know a little bit, but  </p>";
+                $result2 = "result2.png";
+                echo "<br><img src=\" images/$result2 \" class=\"result2\">";
         break;
-            case $totalCorrect <=19: echo "Your Total:$totalCorrect/20 <br> You are almost the best";
+            case $totalCorrect <=19: echo "Your Total:$totalCorrect/20 <br><p> You are on your way to being the biggest fan...</p>";
+                $result3 = "result3.png";
+                echo "<br><img src=\" images/$result3 \" class=\"result3\">";
         break;
-            case $totalCorrect =20: echo "Your Total:$totalCorrect/20 <br> Congratulations! You are the BIGGEST fan!";
+            case $totalCorrect ==20: echo "Your Total:$totalCorrect/20 <br><p> Congratulations! You are the BIGGEST fan! </p>";
+                $result4 = "result4.png";
+                echo "<br><img src=\" images/$result4 \" class=\"result4\">";
         break;
-            default: echo "Please try again.";
+            default: echo "<p>Please try again.<p>";
         }
        
         

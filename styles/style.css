@@ -172,7 +172,7 @@ form input[type="radio"] {
 
 .Options {
     text-align: center;
-    background-color: grey;
+    background-color: rgb(173, 173, 173);
     font-size: 30px;
     width: 420px;
     height: auto;
