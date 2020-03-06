@@ -21,6 +21,8 @@
 </head>
 <body class="homepg">
 
+<!-- Jumbotron Start -->
+
 <div class="jumbotron hpg-content">
     <img class="img" src="images/hogwarts.png" alt="hogwarts crest">
   <h1 class="display-4 heading">Welcome to the Ultimate Harry Potter Quiz!</h1>
@@ -28,6 +30,9 @@
   <p><h2>Prove that you are the <span class="blinking">BIGGEST FAN</span> by testing your knowledge.</h2></p>
 </div>
 
+<!-- Jumbotron End -->
+
+<!-- Content Start -->
 <div class="hpg-center">
 <div class="wp-input">
     <form action="questions.php" method="post">
@@ -88,11 +93,16 @@
     alt="Slytherin Crest" />
 </label>
 </div>
+
+<!-- Content End -->
 <br>
 <br>
+
+<!-- Button Start -->
     <input type="submit" class="submitbtn">
  </div>
 </div>
+<!-- Button End -->
 <br>
 <br>
 
