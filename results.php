@@ -61,7 +61,7 @@
         break;
             case $totalCorrect ==20: echo "<p class=\"textStyle\">Your Total:$totalCorrect/20 </p><br><p class=\"textStyle\"> Congratulations! You are the <span class=\"blinking2\">BIGGEST FAN</span>! </p>";
                 $result4 = "result4.png";
-                echo "<br><img src=\" images/$result4 \" class=\"result4\">";
+                echo "<br><img src=\" images/$result4 \" class=\"result4\"><br>";
         break;
             default: echo "<p class=\"textStyle\">Please try again.</p>";
         }
