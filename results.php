@@ -47,11 +47,11 @@
       
 
         switch($totalCorrect){
-            case $totalCorrect <10: echo "<p class=\"textStyle\">Your Total:$totalCorrect/20 </p><br><p class=\"textStyle\"> Have you even read Harry Potter? </p>";
+            case $totalCorrect <10: echo "<p class=\"textStyle\">Your Total:$totalCorrect/20 </p><br><p class=\"textStyle\"> You are definitely a Muggle! Try again... </p>";
                 $result1 = "result1.png";
                 echo "<br><img src=\" images/$result1 \" class=\"result1\">";
         break;
-            case $totalCorrect <=15: echo "<p class=\"textStyle\">Your Total:$totalCorrect/20 </p><br><p class=\"textStyle\"> You know a bit, but there is still room for improvement!  </p>";
+            case $totalCorrect <=15: echo "<p class=\"textStyle\">Your Total:$totalCorrect/20 </p><br><p class=\"textStyle\"> You know a bit, but the Sorting Hat needs better answers!  </p>";
                 $result2 = "result2.png";
                 echo "<br><img src=\" images/$result2 \" class=\"result2\">";
         break;
@@ -59,7 +59,7 @@
                 $result3 = "result3.png";
                 echo "<br><img src=\" images/$result3 \" class=\"result3\">";
         break;
-            case $totalCorrect ==20: echo "<p class=\"textStyle\">Your Total:$totalCorrect/20 </p><br><p class=\"textStyle\"> Congratulations! You are the <span class=\"blinking2\">BIGGEST FAN</span>! </p>";
+            case $totalCorrect ==20: echo "<p class=\"textStyle\">Your Total:$totalCorrect/20 </p><br><p class=\"textStyle\"> Well done! You are the <span class=\"blinking2\">BIGGEST FAN</span>! </p>";
                 $result4 = "result4.png";
                 echo "<br><img src=\" images/$result4 \" class=\"result4\"><br>";
         break;

@@ -22,7 +22,12 @@
 <nav class="navbar navbar-dark bg-dark">
   <a class="navbar-brand" href="index.php">Back to Home Page</a>
 </nav>
- <h1 class="hpg-content heading">Welcome to <?php echo $_POST["crest"];?>  <?php echo $_POST["name"]; ?>, Please complete the next 20 questions to get your results:</h1> 
+
+<div class="jumbotron hpg-content">
+  <h1 class="display-4 heading">Welcome to <?php echo $_POST["crest"];?>  <?php echo $_POST["name"]; ?></h1>
+  <hr class="my-4">
+  <p><h1>Please complete the next 20 questions to get your results:</h1> </p>
+</div>
  <br>
  <br>
 
@@ -158,7 +163,6 @@
         
         
         <!-- Quiz Output Starts Here -->
-        <div class="container">
         <form action="results.php" method="post" id="quiz">
             <?php
 
@@ -175,7 +179,7 @@
         <!-- Quiz Output Ends Here -->
             <br>
             <br>
-            </div>
+    
 
             <!-- Button Starts Here -->
             <div class="button">
