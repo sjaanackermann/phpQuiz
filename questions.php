@@ -27,6 +27,8 @@
  <br>
 
 <?php 
+
+//Quiz Array Starts Here
  
     $quiz= array(
         
@@ -151,9 +153,11 @@
             "A" => "6 Books & 8 Movies"), 
         
         );
+        //Quiz Array Ends Here
         ?>
         
         
+        <!-- Quiz Output Starts Here -->
         <div class="container">
         <form action="results.php" method="post" id="quiz">
             <?php
@@ -168,6 +172,7 @@
                 }
                 
             ?>
+        <!-- Quiz Output Ends Here -->
             <br>
             <br>
             </div>
