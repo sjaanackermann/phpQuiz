@@ -23,22 +23,22 @@
 
 <!-- Navbar Starts Here -->
 
-<nav class="navbar navbar-dark bg-dark">
-  <a class="navbar-brand" href="index.php">Back to Home Page</a>
-</nav>
+    <nav class="navbar navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.php">Back to Home Page</a>
+    </nav>
 
 <!-- Navbar Ends Here -->
 
 <!-- Content Starts Here -->
     
-<div class="heading hpg-content">
+    <div class="heading hpg-content">
         
         <br>
-		<h1>Your results :<h1>
+	    <h1>Your results :<h1>
         <br>
-        </div>	
-        <div class="resultContent">
-        <?php
+    </div>	
+    <div class="resultContent">
+    <?php
 
         //print_r($_POST);
 

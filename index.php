@@ -25,9 +25,9 @@
 
 <div class="jumbotron hpg-content">
     <img class="img" src="images/hogwarts.png" alt="hogwarts crest">
-  <h1 class="display-4 heading">Welcome to the Ultimate Harry Potter Quiz!</h1>
-  <hr class="my-4">
-  <p><h2>Prove that you are the <span class="blinking">BIGGEST FAN</span> by testing your knowledge.</h2></p>
+    <h1 class="display-4 heading">Welcome to the Ultimate Harry Potter Quiz!</h1>
+    <hr class="my-4">
+    <p><h2>Prove that you are the <span class="blinking">BIGGEST FAN</span> by testing your knowledge.</h2></p>
 </div>
 
 <!-- Jumbotron End -->
@@ -36,63 +36,63 @@
 <div class="hpg-center">
 <div class="wp-input">
     <form action="questions.php" method="post">
-        <br>
-    <h3><u>Please enter your Name:</u></h3> <input type="text" name="name" required>
-    <br>
-    <br>
-    </div>
-    <br>
-    <div class="wp-input">   
-        <br>
-    <h3><u>Please select your House:</u></h3> 
-    <br>
-</div>
-<br>
-<br>
-   <div class="crests">
+      <br>
+      <h3><u>Please enter your Name:</u></h3> <input type="text" name="name" required>
+      <br>
+      <br>
+  </div>
+      <br>
+  <div class="wp-input">   
+      <br>
+      <h3><u>Please select your House:</u></h3> 
+      <br>
+  </div>
+      <br>
+      <br>
+  <div class="crests">
     <input 
-        type="radio" name="crest" value="Gryffindor"
-        id="Gryffindor" class="input-hidden" required/>
+       type="radio" name="crest" value="Gryffindor"
+       id="Gryffindor" class="input-hidden" required/>
     <label for="Gryffindor">
-        <img class=""
-        src="images/gryffindor.png" 
-        alt="Gryffindor Crest" />
+       <img class=""
+       src="images/gryffindor.png" 
+       alt="Gryffindor Crest" />
     </label>
-    </div>
-    <br>
-    <div class="crests">
-    <input 
-  type="radio" name="crest" value="Ravenclaw"
-  id="Ravenclaw" class="input-hidden" required/>
-<label for="Ravenclaw">
-  <img 
-    src="images/ravenclaw.png" 
-    alt="Ravenclaw Crest" />
-</label>
-</div>
-<br>
+  </div>
+      <br>
+  <div class="crests">
+      <input 
+      type="radio" name="crest" value="Ravenclaw"
+      id="Ravenclaw" class="input-hidden" required/>
+    <label for="Ravenclaw">
+      <img 
+      src="images/ravenclaw.png" 
+      alt="Ravenclaw Crest" />
+    </label>
+  </div>
+      <br>
 
-<div class="crests">
-<input 
-  type="radio" name="crest" value="Hufflepuff"
-  id="Hufflepuff" class="input-hidden" required/>
-<label for="Hufflepuff">
-  <img 
-    src="images/hufflepuff.png" 
-    alt="Hufflepuff Crest" />
-</label>
-</div>
-<br>
-<div class="crests">
-<input 
-  type="radio" name="crest" value="Slytherin"
-  id="Slytherin" class="input-hidden" required/>
-<label for="Slytherin">
-  <img 
-    src="images/slytherin.png" 
-    alt="Slytherin Crest" />
-</label>
-</div>
+  <div class="crests">
+  <input 
+    type="radio" name="crest" value="Hufflepuff"
+    id="Hufflepuff" class="input-hidden" required/>
+    <label for="Hufflepuff">
+      <img 
+      src="images/hufflepuff.png" 
+      alt="Hufflepuff Crest" />
+    </label>
+  </div>
+      <br>
+  <div class="crests">
+    <input 
+    type="radio" name="crest" value="Slytherin"
+    id="Slytherin" class="input-hidden" required/>
+    <label for="Slytherin">
+      <img 
+      src="images/slytherin.png" 
+      alt="Slytherin Crest" />
+    </label>
+  </div>
 
 <!-- Content End -->
 <br>

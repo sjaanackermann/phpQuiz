@@ -19,17 +19,17 @@
 
 </head>
 <body class="questionpg">
-<nav class="navbar navbar-dark bg-dark">
-  <a class="navbar-brand" href="index.php">Back to Home Page</a>
-</nav>
+    <nav class="navbar navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.php">Back to Home Page</a>
+    </nav>
 
-<div class="jumbotron hpg-content">
-  <h1 class="display-4 heading">Welcome to <?php echo $_POST["crest"];?>  <?php echo $_POST["name"]; ?></h1>
-  <hr class="my-4">
-  <p><h1>Please complete the next 20 questions to get your results:</h1> </p>
-</div>
- <br>
- <br>
+    <div class="jumbotron hpg-content">
+        <h1 class="display-4 heading">Welcome to <?php echo $_POST["crest"];?>  <?php echo $_POST["name"]; ?></h1>
+        <hr class="my-4">
+        <p><h1>Please complete the next 20 questions to get your results:</h1> </p>
+    </div>
+        <br>
+        <br>
 
 <?php 
 
@@ -176,7 +176,7 @@
                 }
                 
             ?>
-        <!-- Quiz Output Ends Here -->
+            <!-- Quiz Output Ends Here -->
             <br>
             <br>
     
