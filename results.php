@@ -21,9 +21,15 @@
 </head>
 <body class= "resultspg">
 
+<!-- Navbar Starts Here -->
+
 <nav class="navbar navbar-dark bg-dark">
   <a class="navbar-brand" href="index.php">Back to Home Page</a>
 </nav>
+
+<!-- Navbar Ends Here -->
+
+<!-- Content Starts Here -->
     
 <div class="heading hpg-content">
         
@@ -34,8 +40,12 @@
         <div class="resultContent">
         <?php
 
-        /*print_r($_POST);*/
+        //print_r($_POST);
 
+
+
+
+       //Result Calculation Starts Here
 
         $totalCorrect = 0;
 
@@ -59,7 +69,7 @@
                 $result3 = "result3.png";
                 echo "<br><img src=\" images/$result3 \" class=\"result3\">";
         break;
-            case $totalCorrect ==20: echo "<p class=\"textStyle\">Your Total:$totalCorrect/20 </p><br><p class=\"textStyle\"> Well done! You are the <span class=\"blinking2\">BIGGEST FAN</span>! </p>";
+            case $totalCorrect ==20: echo "<p class=\"textStyle\">Your Total:$totalCorrect/20 </p><br><p class=\"textStyle\"> Well done! You are the <span class=\"blinking\">BIGGEST FAN</span>!</p>";
                 $result4 = "result4.png";
                 echo "<br><img src=\" images/$result4 \" class=\"result4\"><br>";
         break;
@@ -70,7 +80,7 @@
         
     ?>
 	</div>
-    
+    <!-- Content Ends Here -->
     
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
