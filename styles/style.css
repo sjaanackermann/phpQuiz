@@ -22,7 +22,7 @@
     align-content: center;
 }
 
-
+/* Submit Button Styling*/
 .submitbtn {
 background: #016ABC;
 color: lightgoldenrodyellow;
@@ -49,6 +49,8 @@ text-shadow:none;
     border-radius: 15px;
 }
 
+/* Navbar Styling*/
+
 .navbar-brand:hover {
     background-color: grey;
     border: none;
@@ -72,6 +74,81 @@ text-shadow:none;
     align-content: center;
    
 }
+
+/* Text Animatiob*/
+.blinking{
+    animation:blinkingText 1.5s infinite;
+}
+@keyframes blinkingText{
+    0%{     color: rgb(221, 155, 11);}
+    50%{    color: transparent; }
+    100%{   color: rgb(221, 155, 11); }
+}
+
+
+/*-------------------------------------------------------------*/
+
+
+
+
+/* Media Queries */
+
+/* Smartphones (portrait and landscape) */
+@media only screen
+and (min-width : 320px)
+and (max-width : 480px) {
+    img {
+        max-width: 100%;
+        height: auto;
+      }
+}
+
+/* iPads (portrait and landscape) */
+@media only screen
+and (min-width : 768px)
+and (max-width : 1024px) {
+    img {
+        max-width: 100%;
+        height: auto;
+      }
+
+}
+
+
+/* Desktops and laptops */
+@media only screen
+and (min-width : 1224px) {
+    img {
+        max-width: 100%;
+        height: auto;
+      }
+
+}
+
+/* Large screens */
+@media only screen
+and (min-width : 1824px) {
+    img {
+        max-width: 100%;
+        height: auto;
+      }
+
+}
+
+/* iPhone 4 */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+    img {
+        max-width: 100%;
+        height: auto;
+      }
+
+}
+
+
+/*-------------------------------------------------------------*/
+
 
 
 
@@ -113,14 +190,7 @@ text-shadow:none;
     border-radius: 15px;
 }
 
-.blinking{
-    animation:blinkingText 1.5s infinite;
-}
-@keyframes blinkingText{
-    0%{     color: rgb(221, 155, 11);}
-    50%{    color: transparent; }
-    100%{   color: rgb(221, 155, 11); }
-}
+
 
 
 .crests {
@@ -145,6 +215,14 @@ input[type="radio"] + img :checked + label {
 form input[type="radio"] {
     margin-right: 10px;
 }
+
+
+
+/*-------------------------------------------------------------*/
+
+
+
+
 
 
 /*question page styling*/
@@ -184,6 +262,11 @@ form input[type="radio"] {
 }
 
 
+/*-------------------------------------------------------------*/
+
+
+
+
 /*result page styling*/
 .resultspg {
     background-image: url(../images/resultsPageBg.jpg);
@@ -206,6 +289,11 @@ form input[type="radio"] {
     border-radius: 15px;
 
 }
+
+
+
+/*-------------------------------------------------------------*/
+
 
 
 /* Image styling & animation result page */

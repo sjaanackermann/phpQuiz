@@ -59,19 +59,19 @@
         switch($totalCorrect){
             case $totalCorrect <10: echo "<p class=\"textStyle\">Your Total:$totalCorrect/20 </p><br><p class=\"textStyle\"> You are definitely a Muggle! Try again... </p>";
                 $result1 = "result1.png";
-                echo "<br><img src=\" images/$result1 \" class=\"result1\">";
+                echo "<br><img src=\" images/$result1 \" class=\"result1 @media\">";
         break;
             case $totalCorrect <=15: echo "<p class=\"textStyle\">Your Total:$totalCorrect/20 </p><br><p class=\"textStyle\"> You know a bit, but the Sorting Hat needs better answers!  </p>";
                 $result2 = "result2.png";
-                echo "<br><img src=\" images/$result2 \" class=\"result2\">";
+                echo "<br><img src=\" images/$result2 \" class=\"result2 @media\">";
         break;
             case $totalCorrect <=19: echo "<p class=\"textStyle\">Your Total:$totalCorrect/20 </p><br><p class=\"textStyle\"> You are on your way to being the biggest fan...</p>";
                 $result3 = "result3.png";
-                echo "<br><img src=\" images/$result3 \" class=\"result3\">";
+                echo "<br><img src=\" images/$result3 \" class=\"result3 @media\">";
         break;
             case $totalCorrect ==20: echo "<p class=\"textStyle\">Your Total:$totalCorrect/20 </p><br><p class=\"textStyle\"> Well done! You are the <span class=\"blinking\">BIGGEST FAN</span>!</p>";
                 $result4 = "result4.png";
-                echo "<br><img src=\" images/$result4 \" class=\"result4\"><br>";
+                echo "<br><img src=\" images/$result4 \" class=\"result4 @media\"><br>";
         break;
             default: echo "<p class=\"textStyle\">Please try again.</p>";
         }
