@@ -299,20 +299,34 @@ form input[type="radio"] {
 /* Image styling & animation result page */
 
 .result1 {
-
-
+    animation: shake-animation 2s ease infinite;
 }
+
+@keyframes shake-animation {
+    0% { transform: rotate(0deg); }
+    80% { transform: rotate(0deg); }
+    85% { transform: rotate(5deg); }
+    95% { transform: rotate(-5deg); }
+   100% { transform: rotate(0deg); }
+ }
 
 
 .result2 {
 
-
-
-}
+  }
 
 
 .result3 {
+    animation: rotation 4s infinite linear;
 
+    }
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
 
 }
 
