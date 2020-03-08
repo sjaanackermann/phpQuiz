@@ -304,16 +304,24 @@ form input[type="radio"] {
 
 @keyframes shake-animation {
     0% { transform: rotate(0deg); }
-    80% { transform: rotate(0deg); }
-    85% { transform: rotate(5deg); }
-    95% { transform: rotate(-5deg); }
-   100% { transform: rotate(0deg); }
+    25% { transform: rotate(5deg); }
+    50% { transform: rotate(-5deg); }
+    75% { transform: rotate(5deg); }
+    100% { transform: rotate(0deg); }
  }
 
 
 .result2 {
-
+    animation: nudge 3s linear infinite;
   }
+
+@keyframes nudge {
+    0%, 100% {transform: translate(0, 0);}
+    20% {transform: translate(25px, 0);}
+    40% {transform: translate(50px, 0);}
+    60% {transform: translate(-50px, 0);}
+    80% {transform: translate(-25px, 0);}
+  }  
 
 
 .result3 {
