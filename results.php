@@ -59,6 +59,7 @@
 
         switch($totalCorrect){
         
+<<<<<<< HEAD
             case 0: 
                 echo "<p class=\"textStyle\">Your Total:$totalCorrect/20 </p><br><p class=\"textStyle\"> You are definitely a Muggle! Try again... </p>";
                 $result1 = "result1.png";
@@ -67,6 +68,9 @@
 
             case $totalCorrect <= 10: 
                 echo "<p class=\"textStyle\">Your Total:$totalCorrect/20 </p><br><p class=\"textStyle\"> You are definitely a Muggle! Try again... </p>";
+=======
+            case $totalCorrect <10: echo "<p class=\"textStyle\">Your Total:$totalCorrect/20 </p><br><p class=\"textStyle\"> You are definitely a Muggle! Try again... </p>";
+>>>>>>> 71c0b4d74db5e0959e1721670e14cc317db87a5f
                 $result1 = "result1.png";
                 echo "<br><img src=\" images/$result1 \" class=\"result1 @media\">";
                 break;
