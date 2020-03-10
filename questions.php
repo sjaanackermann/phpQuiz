@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -18,183 +19,209 @@
     <title>Harry Potter Quiz</title>
 
 </head>
+
 <body class="questionpg">
     <nav class="navbar navbar-dark bg-dark">
         <a class="navbar-brand" href="index.php">Back to Home Page</a>
     </nav>
 
     <div class="jumbotron hpg-content">
-        <h1 class="display-4 heading">Welcome to <?php echo $_POST["crest"];?>  <?php echo $_POST["name"]; ?></h1>
+        <h1 class="display-4 heading">Welcome to 
+            <?php echo $_POST["crest"]; ?> 
+            <?php echo $_POST["name"]; ?>
+        </h1>
         <hr class="my-4">
-        <p><h1>Please complete the next 20 questions to get your results:</h1> </p>
+        <p>
+            <h1>Please complete the next 20 questions to get your results:</h1>
+        </p>
     </div>
-        <br>
-        <br>
+    <br>
+    <br>
 
-<?php 
+    <?php
 
-//Quiz Array Starts Here
- 
-    $quiz= array(
-        
-        "Who is the main character of the Series?"=>array(
-            "A" => "Hermione Granger", 
-            "B" => "Ron Weasley", 
-            "C" => "Harry Potter", 
-            "D" => "Albus Dumbledore"),  
-        
-        "What is the name of Ron Weasleys Rat?"=>array(
-            "C" => "Scabbers", 
-            "A" => "Hedgwig", 
-            "B" => "Crookshanks", 
-            "D" => "Neville"), 
-        
-        "What is Dumbledore’s full name?"=>array(
-            "B" => "Albus Wulfric Percival Brian Dumbledore", 
-            "C" => "Albus Percival Wulfric Brian Dumbledore", 
-            "D" => "Albus Percival Brian Wulfric Dumbledore", 
-            "A" => "Albus Brian Percival Wulfric Dumbledore"), 
+    //Quiz Array Starts Here
 
-        "What is the Symbol the Ravenclaw house?"=>array(
-            "D" => "Raven", 
-            "B" => "Crow", 
-            "C" => "Eagle", 
-            "A" => "Hawk"), 
+    $quiz = array(
 
-        "What is the LAST line of the book, Harry Potter & the Sorcerer’s Stone?"=>array(
-            "A" => "\"Goodbye, for now, Hogwarts.\"", 
-            "B" => "\"Harry, Ron, and Hermione looked at each other sheepishly and smiled.\"", 
-            "C" => "\"I’m going to have a lot of fun with Dudley this summer…\"", 
-            "D" => "\"'Until the fall,' said Dumbledore with a nod.\""), 
+        "Who is the main character of the Series?" => array(
+            "A" => "Hermione Granger",
+            "B" => "Ron Weasley",
+            "C" => "Harry Potter",
+            "D" => "Albus Dumbledore"
+        ),
 
-        "What is Lord Voldemort’s Real Name?"=>array(
-            "C" => "Tom Marvolo Riddle", 
-            "A" => "Tom Marvilo Riddle", 
-            "B" => "Tom Marvin Riddle", 
-            "D" => "Tom Ravolo Riddle"), 
+        "What is the name of Ron Weasleys Rat?" => array(
+            "C" => "Scabbers",
+            "A" => "Hedgwig",
+            "B" => "Crookshanks",
+            "D" => "Neville"
+        ),
 
-        "How Many Sickles are in a Galleon?"=>array(
-            "B" => "13", 
-            "D" => "15", 
-            "C" => "17", 
-            "A" => "19"), 
+        "What is Dumbledore’s full name?" => array(
+            "B" => "Albus Wulfric Percival Brian Dumbledore",
+            "C" => "Albus Percival Wulfric Brian Dumbledore",
+            "D" => "Albus Percival Brian Wulfric Dumbledore",
+            "A" => "Albus Brian Percival Wulfric Dumbledore"
+        ),
 
-        "A person born into a wizarding family who cannot do magic is called?"=>array(
-            "A" => "A Muggle", 
-            "B" => "A Half-Blood", 
-            "D" => "A Mudblood", 
-            "C" => "A Squib"), 
+        "What is the Symbol the Ravenclaw house?" => array(
+            "D" => "Raven",
+            "B" => "Crow",
+            "C" => "Eagle",
+            "A" => "Hawk"
+        ),
 
-        "How many points is a snitch worth in Quidditch?"=>array(
-            "A" => "100", 
-            "C" => "150", 
-            "B" => "200", 
-            "D" => "250"), 
+        "What is the LAST line of the book, Harry Potter & the Sorcerer’s Stone?" => array(
+            "A" => "\"Goodbye, for now, Hogwarts.\"",
+            "B" => "\"Harry, Ron, and Hermione looked at each other sheepishly and smiled.\"",
+            "C" => "\"I’m going to have a lot of fun with Dudley this summer…\"",
+            "D" => "\"'Until the fall,' said Dumbledore with a nod.\""
+        ),
 
-        "Who put Harry’s name in the Goblet of Fire?"=>array(
-            "D" => "Peter Pettigrew", 
-            "B" => "Severus Snape", 
-            "A" => "Cornelius Fudge", 
-            "C" => "Barty Crouch Jr"), 
+        "What is Lord Voldemort’s Real Name?" => array(
+            "C" => "Tom Marvolo Riddle",
+            "A" => "Tom Marvilo Riddle",
+            "B" => "Tom Marvin Riddle",
+            "D" => "Tom Ravolo Riddle"
+        ),
 
-        "Which Harry Potter word is now in the Oxford English Dictionary?"=>array(
-            "A" => "Hogwarts", 
-            "B" => "Voldemort", 
-            "C" => "Muggle", 
-            "D" => "Squib"), 
+        "How Many Sickles are in a Galleon?" => array(
+            "B" => "13",
+            "D" => "15",
+            "C" => "17",
+            "A" => "19"
+        ),
 
-        "In order of birth, who are the seven Weasley siblings?"=>array(
-            "A" => "Percy, Bill, George, Charlie, Fred, Ron, Ginny", 
-            "D" => "George, Fred, Percy, Bill, Charlie, Ron, Ginny", 
-            "C" => "Bill, Charlie, Percy, Fred, George, Ron, Ginny", 
-            "B" => "Percy, Charlie, George, Bill, Ron, Fred, Ginny"), 
+        "A person born into a wizarding family who cannot do magic is called?" => array(
+            "A" => "A Muggle",
+            "B" => "A Half-Blood",
+            "D" => "A Mudblood",
+            "C" => "A Squib"
+        ),
 
-        "What are the three Unforgivable curses?"=>array(
-            "A" => "Impedimenta, Incarcerous and Incendio", 
-            "C" => "Avada Kedavra, Crucio and Imperio", 
-            "B" => "Expelliarmus, Expecto Patronum and Diffindo", 
-            "D" => "Incarcerous and Crucio and Avada Kedavra"), 
+        "How many points is a snitch worth in Quidditch?" => array(
+            "A" => "100",
+            "C" => "150",
+            "B" => "200",
+            "D" => "250"
+        ),
 
-        "Which of these Hogwarts professors teaches Transfiguration?"=>array(
-            "D" => "Snape", 
-            "B" => "Sprout", 
-            "C" => "McGonagall", 
-            "A" => "Hagrid"), 
+        "Who put Harry’s name in the Goblet of Fire?" => array(
+            "D" => "Peter Pettigrew",
+            "B" => "Severus Snape",
+            "A" => "Cornelius Fudge",
+            "C" => "Barty Crouch Jr"
+        ),
 
-        "What's the only book in the Harry Potter series that doesn't feature Lord Voldemort?"=>array(
-            "A" => "The Sorcerer's Stone", 
-            "C" => "The Prisoner of Azkaban", 
-            "D" => "The Deathly Hallows", 
-            "B" => "The Goblet of Fire"), 
+        "Which Harry Potter word is now in the Oxford English Dictionary?" => array(
+            "A" => "Hogwarts",
+            "B" => "Voldemort",
+            "C" => "Muggle",
+            "D" => "Squib"
+        ),
 
-        "Who was NOT a member of the Order of the Phoenix?"=>array(
-            "B" => "Mad-Eye Moody", 
-            "A" => "Albus Dumbledore", 
-            "C" => "Bellatrix Lestrange", 
-            "D" => "Sirius Black"), 
+        "In order of birth, who are the seven Weasley siblings?" => array(
+            "A" => "Percy, Bill, George, Charlie, Fred, Ron, Ginny",
+            "D" => "George, Fred, Percy, Bill, Charlie, Ron, Ginny",
+            "C" => "Bill, Charlie, Percy, Fred, George, Ron, Ginny",
+            "B" => "Percy, Charlie, George, Bill, Ron, Fred, Ginny"
+        ),
 
-        "How many copies did \"Harry Potter and the Deathly Hallows\" sell the first day of its release in the U.S. and the U.K.?"=>array(
-            "A" => "5 million", 
-            "D" => "8 million", 
-            "C" => "11 million", 
-            "B" => "7 million"), 
+        "What are the three Unforgivable curses?" => array(
+            "A" => "Impedimenta, Incarcerous and Incendio",
+            "C" => "Avada Kedavra, Crucio and Imperio",
+            "B" => "Expelliarmus, Expecto Patronum and Diffindo",
+            "D" => "Incarcerous and Crucio and Avada Kedavra"
+        ),
 
-        "The first Harry Potter theme park opened in 2010. Where is it?"=>array(
-            "D" => "Kyoto, Japan", 
-            "B" => "Birmingham, England", 
-            "C" => "Orlando, Florida", 
-            "A" => "Paris, France"), 
+        "Which of these Hogwarts professors teaches Transfiguration?" => array(
+            "D" => "Snape",
+            "B" => "Sprout",
+            "C" => "McGonagall",
+            "A" => "Hagrid"
+        ),
 
-        "In the third book, \"Harry Potter and the Prisoner of Azkaban,\" Harry runs away from his aunt and uncle's home after accidentally ______________."=>array(
-            "B" => "Casting a Patronus charm", 
-            "C" => "Blowing his Aunt Marge up like a balloon", 
-            "D" => "Dropping a bag of chocolate frogs, that gets eaten by Dudley", 
-            "A" => "Giving Dudley a pig tail, after Dudley ate his Birthday cake"), 
+        "What's the only book in the Harry Potter series that doesn't feature Lord Voldemort?" => array(
+            "A" => "The Sorcerer's Stone",
+            "C" => "The Prisoner of Azkaban",
+            "D" => "The Deathly Hallows",
+            "B" => "The Goblet of Fire"
+        ),
 
-        "And lastly, how many books are in the series, and how many movies were made from the books?"=>array(
-            "C" => "7 Books & 8 Movies", 
-            "B" => "6 Books & 7 Movies", 
-            "D" => "7 Books & 7 Movies", 
-            "A" => "6 Books & 8 Movies"), 
-        
-        );
-        //Quiz Array Ends Here
+        "Who was NOT a member of the Order of the Phoenix?" => array(
+            "B" => "Mad-Eye Moody",
+            "A" => "Albus Dumbledore",
+            "C" => "Bellatrix Lestrange",
+            "D" => "Sirius Black"
+        ),
+
+        "How many copies did \"Harry Potter and the Deathly Hallows\" sell the first day of its release in the U.S. and the U.K.?" => array(
+            "A" => "5 million",
+            "D" => "8 million",
+            "C" => "11 million",
+            "B" => "7 million"
+        ),
+
+        "The first Harry Potter theme park opened in 2010. Where is it?" => array(
+            "D" => "Kyoto, Japan",
+            "B" => "Birmingham, England",
+            "C" => "Orlando, Florida",
+            "A" => "Paris, France"
+        ),
+
+        "In the third book, \"Harry Potter and the Prisoner of Azkaban,\" Harry runs away from his aunt and uncle's home after accidentally ______________." => array(
+            "B" => "Casting a Patronus charm",
+            "C" => "Blowing his Aunt Marge up like a balloon",
+            "D" => "Dropping a bag of chocolate frogs, that gets eaten by Dudley",
+            "A" => "Giving Dudley a pig tail, after Dudley ate his Birthday cake"
+        ),
+
+        "And lastly, how many books are in the series, and how many movies were made from the books?" => array(
+            "C" => "7 Books & 8 Movies",
+            "B" => "6 Books & 7 Movies",
+            "D" => "7 Books & 7 Movies",
+            "A" => "6 Books & 8 Movies"
+        ),
+
+    );
+    //Quiz Array Ends Here
+    ?>
+
+
+    <!-- Quiz Output Starts Here -->
+    <form action="results.php" method="post" id="quiz">
+        <?php
+
+        foreach ($quiz as $question => $answers) {
+            echo "<br><br><h2 class='Questions'>$question</h2>";
+
+            foreach ($answers as $index => $answer) {
+                echo "<div class=\"Options\"><input type=\"radio\" name=\"$question\" value=\"$index\" required>" . $answer . "<br></div>";
+            }
+        }
+
         ?>
-        
-        
-        <!-- Quiz Output Starts Here -->
-        <form action="results.php" method="post" id="quiz">
-            <?php
+        <!-- Quiz Output Ends Here -->
+        <br>
+        <br>
 
-                foreach($quiz as $question => $answers) {
-                    echo "<br><br><h2 class='Questions'>$question</h2>";
-            
-                foreach($answers as $index => $answer) {
-                    echo "<div class=\"Options\"><input type=\"radio\" name=\"$question\" value=\"$index\" required>".$answer."<br></div>" ;
-                    }
 
-                }
-                
-            ?>
-            <!-- Quiz Output Ends Here -->
-            <br>
-            <br>
-    
-
-            <!-- Button Starts Here -->
-            <div class="button">
+        <!-- Button Starts Here -->
+        <div class="button">
             <input type="submit" value="Get Results" class="submitbtn" required />
-            </div>
-            <!-- Button Ends Here -->
-            <br>
-            <br>
-            <br>
-        </form>
+        </div>
+        <!-- Button Ends Here -->
+        <br>
+        <br>
+        <br>
+    </form>
 
-        
-    
-        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    </body>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+
 </html>
